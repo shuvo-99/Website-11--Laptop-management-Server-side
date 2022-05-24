@@ -1,0 +1,90 @@
+[
+  {
+    "name": "HP 15s-du1087TU",
+    "price": "35,500",
+    "quantity": "20",
+    "supplier name": "M A Manna",
+    "description": "Intel Celeron Processor N4020 (4M Cache, up to 2.80 GHz). 4GB DDR4 RAM + 1TB HDD. 15.6 inch Full HD 1920x1080 Display. Windows 10 Home",
+    "img": "https://i.ibb.co/k4WFMVx/vivobook-15-x515ea-05-500x500.jpg"
+  },
+  {
+    "name": "Asus Vivobook X515MA",
+    "price": "38,000",
+    "quantity": "10",
+    "supplier name": "M A Manna",
+    "description": "Processor: Intel Celeron N4020 (4M Cache, 1.10 GHz up to 2.80 GHz). Memory: 4GB DDR4 RAM. Storage: 1TB 5400RPM HDD. Display: 15.6 HD (1366 x 768)",
+    "img": "https://i.ibb.co/mbwLw3R/caroline-lm-Ji-Bssi-ZVPZA-unsplash.jpg"
+  },
+  {
+    "name": "Dell Inspiron 15 3510",
+    "price": "40,800",
+    "quantity": "20",
+    "supplier name": "M A Manna",
+    "description": "Processor: Intel Pentium Silver N5030 (4MB Cache, 1.10 GHz Up To 3.10 GHz ). RAM: 4GB 2400MHz DDR4. Storage: 1TB SATA 5400RPM. Display: 15.6 HD (1366 x 768) LED",
+    "img": "https://i.ibb.co/Sm8pTP2/hp-15s-spruce-blue-02-500x500.jpg"
+  },
+  {
+    "name": "Asus VivoBook 15 E510MA",
+    "price": "43,500",
+    "quantity": "15",
+    "supplier name": "M A Manna",
+    "description": "Intel Celeron Dual Core N4020 (1.10 GHz up to 2.80 GHz, Cache 4MB). 4GB DDR4 RAM. 512GB PCIe G3 SSD. 15.6 FHD (1920X1080) LED Display",
+    "img": "https://i.ibb.co/VmNhbH6/inspiron-15-3510-01-500x500.jpg"
+  },
+  {
+    "name": "HP 15s-eq1548AU",
+    "price": "43,500",
+    "quantity": "10",
+    "supplier name": "M A Manna",
+    "description": "Processor: AMD Athlon Silver 3050U (2.3 GHz up to 3.2GHz). Memory: 8 GB DDR4-2400 MHz RAM. Storage: 256 GB PCIe NVMe M.2 SSD. Display: 15.6 FHD (1920 x 1080)",
+    "img": "https://i.ibb.co/2d20VyF/quang-tri-nguyen-Vckd-Jzo7ig0-unsplash.jpg"
+  },
+  {
+    "name": "Dell Vostro 14 3405",
+    "price": "44,800",
+    "quantity": "6",
+    "supplier name": "M A Manna",
+    "description": "Processor: Ryzen 3 3250U (4MB CPU Cache, 2.60GHz up to 3.50GHz). RAM: 4GB 3200 MHz DDR4. HDD: 1TB 5400rpm SATA. Display: 14 FHD (1920x1080) LED",
+    "img": "https://i.ibb.co/483W8L8/inspiron-15-3511-88989-500x500.jpg"
+  },
+  {
+    "name": "Dell Inspiron 15 3501",
+    "price": "47,000",
+    "quantity": "5",
+    "supplier name": "M A Manna",
+    "description": "Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz). 4GB DDR4 3200MHz RAM. 1TB HDD. 15.6 FHD(1920x1080) Display",
+    "img": "https://i.ibb.co/5kLF1v9/3501-05-500x500.jpg"
+  },
+  {
+    "name": "Asus VivoBook 15 X515FA",
+    "price": "47,500",
+    "quantity": "20",
+    "supplier name": "M A Manna",
+    "description": "Processor: Intel Core i3-10110U (4M Cache, 2.10 GHz up to 4.10 GHz). Memory: 4GB DDR4 3200MHz RAM. Storage: 1TB 5400 RPM SATA HDD. Display: 15.6 FHD (1920 x 1080) LED",
+    "img": "https://i.ibb.co/R0t0K6b/15s-du1087tu-01-500x500.jpg"
+  },
+  {
+    "name": "Dell Inspiron 15 3511",
+    "price": "49,500",
+    "quantity": "15",
+    "supplier name": "M A Manna",
+    "description": "Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz). 4GB DDR4 3200MHz RAM. 1TB 5400 rpm 2.5 SATA Hard Drive. 15.6-inch FHD (1920 x 1080) Display",
+    "img": "https://i.ibb.co/414ggzC/vivobook-15-e510ma-0101-500x500.jpg"
+  },
+  {
+    "name": "ASUS VivoBook 15 X515EA",
+    "price": "52,000",
+    "quantity": "10",
+    "supplier name": "M A Manna",
+    "description": "Processor: Intel Core i3-1115G4 (6M Cache, 3.00 GHz up to 4.10 GHz). Memory: 4GB DDR4 RAM (Onboard). Storage: 1TB HDD. Display: 15.6 FHD (1920X1080)",
+    "img": "https://i.ibb.co/jZXGH9f/vivobook-15-x515ea-01-500x500.jpg"
+  },
+  {
+    "name": "HP 15s-du3022TU",
+    "price": "53,300",
+    "quantity": "10",
+    "supplier name": "M A Manna",
+    "description": "Intel Core i3-1115G4 Processor (6M Cache, 3.00 GHz up to 4.10 GHz). 4GB DDR4 2666 MHz RAM. 1TB 5400 rpm SATA HDD. 15.6 FHD (1920 x 1080) Display",
+    "img": "https://i.ibb.co/BNCdM8K/14-3405-5-500x500.jpg"
+  }
+]
