@@ -35,12 +35,12 @@ async function run() {
       res.send(item);
     });
 
-    // // POST
-    // app.post('/service', async(req, res) =>{
-    //     const newService = req.body;
-    //     const result = await serviceCollection.insertOne(newService);
-    //     res.send(result);
-    // });
+    // POST;
+    app.post("/item", async (req, res) => {
+      const newItem = req.body;
+      const result = await iCollection.insertOne(newItem);
+      res.send(result);
+    });
 
     // // DELETE
     // app.delete('/service/:id', async(req, res) =>{
