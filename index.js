@@ -3,7 +3,7 @@ const cors = require("cors");
 require("dotenv").config();
 const port = process.env.PORT || 5000;
 const app = express();
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 
 // middleware
 app.use(cors());
@@ -15,12 +15,45 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
-client.connect((err) => {
-  const collection = client.db("test").collection("devices");
-  console.log("connected");
-  // perform actions on the collection object
-  client.close();
-});
+
+async function run() {
+  try {
+    await client.connect();
+    const iCollection = client.db("laptop_management").collection("management");
+
+    app.get("/item", async (req, res) => {
+      const query = {};
+      const cursor = iCollection.find(query);
+      const items = await cursor.toArray();
+      res.send(items);
+    });
+
+    app.get("/item/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const item = await iCollection.findOne(query);
+      res.send(item);
+    });
+
+    // // POST
+    // app.post('/service', async(req, res) =>{
+    //     const newService = req.body;
+    //     const result = await serviceCollection.insertOne(newService);
+    //     res.send(result);
+    // });
+
+    // // DELETE
+    // app.delete('/service/:id', async(req, res) =>{
+    //     const id = req.params.id;
+    //     const query = {_id: ObjectId(id)};
+    //     const result = await serviceCollection.deleteOne(query);
+    //     res.send(result);
+    // });
+  } finally {
+  }
+}
+
+run().catch(console.dir);
 
 app.get("/", (req, res) => {
   res.send("Run laptop");
@@ -29,6 +62,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log("Listening to port", port);
 });
-
-// username = laptopManagement
-// pass = DLknu5nvMEyRGuPn
