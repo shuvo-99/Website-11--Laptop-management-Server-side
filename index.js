@@ -20,12 +20,22 @@ async function run() {
   try {
     await client.connect();
     const iCollection = client.db("laptop_management").collection("management");
+    const rCollection = client.db("laptop_management").collection("reviews");
 
+    // Items
     app.get("/item", async (req, res) => {
       const query = {};
       const cursor = iCollection.find(query);
       const items = await cursor.toArray();
       res.send(items);
+    });
+
+    // Reviews
+    app.get("/review", async (req, res) => {
+      const query1 = {};
+      const cursor = rCollection.find(query1);
+      const reviews = await cursor.toArray();
+      res.send(reviews);
     });
 
     app.get("/item/:id", async (req, res) => {
@@ -49,6 +59,8 @@ async function run() {
       const result = await iCollection.deleteOne(query);
       res.send(result);
     });
+
+    // Update quantity
     app.put("/item/:id", async (req, res) => {
       const id = req.params.id;
       const updatedUser = req.body;
