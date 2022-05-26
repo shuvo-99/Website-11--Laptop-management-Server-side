@@ -49,6 +49,19 @@ async function run() {
       const result = await iCollection.deleteOne(query);
       res.send(result);
     });
+    app.put("/item/:id", async (req, res) => {
+      const id = req.params.id;
+      const updatedUser = req.body;
+      const filter = { _id: ObjectId(id) };
+      const options = { upsert: true };
+      const updatedDoc = {
+        $set: {
+          quantity: updatedUser.quantity,
+        },
+      };
+      const result = await iCollection.updateOne(filter, updatedDoc, options);
+      res.send(result);
+    });
   } finally {
   }
 }
